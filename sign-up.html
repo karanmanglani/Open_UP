@@ -1,33 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up with Open-up</title>
-    <link rel="stylesheet" href="style.css" />
+<html>
+    <head>
+        <title>Sign Up</title> 
+    </head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <body>
+        <img src="background.jpg" class="background">
+        <div class="box">
+            <h1 >Sign UP</h1>
+            <p style="text-align: center;">Join StudentChat to get Started</p>
+            <div>
+                <p class="text" >Full Name</p>
+                
+                <p ><input type="text" placeholder="Your full Name" id="name"></input><img src="images.jpg" class="logo"></p>
+                <p class="text">Email</p>
+                <p class="test"><input type="email" placeholder="Enter your email address" id="email"></input><img src="download.jpg" class="logo"></p>
+                <p class="text">Username</p>
+                <P><input type="text" placeholder="Create a Username" id="username"></input><img src="images.jpg" class="logo"></P>
+                <p class="text">Create a Password</p>
+                <p><input type="password"  id="password1"><img src="download1.png" class="logo" ></p>
+                <p class="text">Confirm Password</p>
+                <p><input type="password" id="password2"><img src="download1.png" class="logo"  ></p>
+                <div id="wrongoutput" value=""></div>
+                <p><input type="checkbox">I agree to the Terms and Privacy Policy.</p>
+                <p><button id="submit">Get Started</button></p>
+                <p class="footer">Already have an Account?<span>Log in</span></p>
+            </div>
+        </div>
+    </body>
     <script src="script.js"></script>
-  </head>
-  <body>
-    <form action="/signup" method="post">
-      <label for="fullname">Full name:</label><br />
-      <input type="text" id="fullname" name="fullname" /><br />
-      <label for="username">Username:</label><br />
-      <input type="text" id="username" name="username" /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br /><br />
-      <input type="submit" value="Sign up" />
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Password"
-      />
-      <input
-        type="password"
-        id="confirm_password"
-        name="confirm_password"
-        placeholder="Confirm Password"
-      />
-    </form>
-  </body>
 </html>
