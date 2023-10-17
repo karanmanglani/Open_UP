@@ -3,7 +3,6 @@ config();
 
 import { OpenAI } from "openai";
 const openai = new OpenAI({ apiKey: process.env.API_KEY });
-
 import readline from "readline";
 const userInterface = readline.createInterface({
   input: process.stdin,

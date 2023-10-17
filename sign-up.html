@@ -7,5 +7,27 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <form action="/signup" method="post">
+      <label for="fullname">Full name:</label><br />
+      <input type="text" id="fullname" name="fullname" /><br />
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Sign up" />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+      />
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        placeholder="Confirm Password"
+      />
+    </form>
+  </body>
 </html>
