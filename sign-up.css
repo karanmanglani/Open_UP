@@ -1,0 +1,61 @@
+body {
+  background-color: rgba(22, 22, 22, 255);
+  color: white;
+  font-family: monospace;
+}
+div[class="box"] {
+  position: absolute;
+  width: 12cm;
+  top: 10px;
+  left: 60%;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 35px;
+  background-color: black;
+  border: none;
+  padding-left: 20px;
+  color: white;
+}
+button {
+  width: 100%;
+  background-color: yellow;
+  height: 40px;
+  border: none;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  font-size: 35;
+}
+input[type="checkbox"] {
+  background-color: rgb(47, 47, 47);
+}
+button:hover {
+  background-color: rgb(134, 134, 0);
+}
+button:active {
+  background-color: rgb(51, 51, 1);
+  color: white;
+}
+p[class="footer"] {
+  text-align: center;
+}
+img[class="logo"] {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  left: 90%;
+  top: -0.7cm;
+}
+img[class="background"] {
+  width: 40%;
+  position: relative;
+  left: 5%;
+}
+.text {
+  padding-left: 20px;
+}
