@@ -1,9 +1,9 @@
-import { config } from "dotenv";
-config();
+const dotenv = require("dotenv");
+dotenv.config();
 
-import { OpenAI } from "openai";
+const OpenAI = require("openai");
 const openai = new OpenAI({ apiKey: process.env.API_KEY });
-import readline from "readline";
+const readline = require("readline");
 const userInterface = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
