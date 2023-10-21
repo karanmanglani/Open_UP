@@ -4,10 +4,13 @@ const rateLimit = require("express-rate-limit");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 const userRouter = require("./routes/userRoutes");
+const helmet = require("helmet");
 
 const app = express();
 
 // 1.) Global Middlewares
+app.use(helmet());
+
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
@@ -22,7 +25,7 @@ app.use("/api", limiter);
 // Serving static files
 app.use(express.static(`${__dirname}/public`));
 
-app.use(express.json());
+app.use(express.json({ limit: "10kb" }));
 app.use("/api/v1/users", userRouter);
 
 app.all("*", (req, res, next) => {
