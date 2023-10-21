@@ -44,8 +44,9 @@ app.use(xss());
 
 //Routes
 app.get("/", (req, res) => {
-  res.status(200).render("base");
+  res.status(200).render("logIn");
 });
+
 app.use("/api/v1/users", userRouter);
 
 app.all("*", (req, res, next) => {
