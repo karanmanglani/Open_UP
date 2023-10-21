@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Personal Profile</title>
+        <style>
+            body{
+                background-color: rgb(93, 93, 93);
+                color:white;
+                border:none;
+                outline:none;
+            }
+            div[class="main"]{
+                background-color: rgb(48, 48, 48);
+                padding-top: 10px;
+                width:20cm;
+                margin:auto;
+                margin-top:7cm;
+                padding-left: 20px;
+                font-family: monospace;
+                font-size: larger;
+                border-radius: 10px;
+                padding-bottom: 10px;
+
+            }
+            input[type="text"],input[type="email"],input[type="number"],input[type="date"]{
+                width: 97%;
+                height: 1cm;
+                border-radius: 5px;
+            }
+            button{
+                width:97%;
+                height:1cm;
+                border-radius: 5px;
+                background-color: rgb(173, 173, 6);
+
+            }
+            button:hover{
+                background-color: rgb(112, 112, 1);
+            }
+            button:active{
+                background-color: rgb(55, 55, 0);
+                color: white;
+               
+            }
+            img{
+                width:1cm;
+                height:1cm;
+                border-radius: 50%;
+                }
+                p[class="heading"]{
+                text-align: center;
+                font-size: 30;
+                text-decoration: underline;
+            }
+            div[class="line"]{
+                display: flex;
+
+            }
+            p[class="box"]{
+                width:6cm;
+            }
+            textarea{
+                max-width: 97%;
+                width:97%;
+            }
+            p[class="heading2"]{
+                font-size: 22;
+                text-decoration: underline;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <p class="heading">Extracurricular Activities</p>
+            <p class="heading2">Clubs or Organizations to whom you are part</p>
+            <div class="line">
+                <p class="box"><input type="checkbox">Cultural Committee</p>
+                <p class="box"><input type="checkbox">The Sports Committee</p>
+                <p class="box"><input type="checkbox">Literary Committee</p>
+            </div>
+            <div class="line">
+                <p class="box"><input type="checkbox">Click Club</p>
+                <p class="box"><input type="checkbox">Sahyog-The Mentorship Club</p>
+                <p class="box"><input type="checkbox">Raaga-The Music Club</p>
+            </div>
+            <div class="line">
+                <p class="box"><input type="checkbox">Go Green Club</p>
+                <p class="box"><input type="checkbox">Rajbhasha Samiti</p>
+                <p class="box"><input type="checkbox">TEDxNITRaipur</p>
+            </div>
+            <div class="line">
+                <p class="box"><input type="checkbox">NCC</p>
+                <p class="box"><input type="checkbox">Dance club</p>
+                <p class="box"><input type="checkbox">Interact Club</p>
+            </div>
+            <div class="line">
+                <p class="box"><input type="checkbox">Abhinay</p>
+                <p class="box"><input type="checkbox">NSS</p>
+                <p class="box"><input type="checkbox">Spic MACYa</p>
+            </div>
+            <div class="line">
+                <p class="box"><input type="checkbox">Ethics club</p>
+                <p class="box"><input type="checkbox">UBA (Unnat Bharat Abhiyan)</p>
+                <p class="box"><input type="checkbox">Finance & Consulting Club</p>
+            </div>
+            <div class="line">
+                <p class="box"><input type="checkbox">The Technocracy</p>
+                <p class="box"><input type="checkbox">Robotics Club</p>
+                <p class="box"><input type="checkbox">NITRR MOTO SPORTS</p>
+            </div>
+            <div class="line">
+                <p class="box"><input type="checkbox">Innovation Cell</p>
+                <p class="box"><input type="checkbox">E-Cell</p>
+            </div>
+            <p class="heading2">Role in the Club</p>
+            <p><input type="text" placeholder="Role in the club"  required></p>
+            <p class="heading2">Description of Club</p>
+            <p><textarea cols="50" rows="4" placeholder="Description of club" ></textarea></p>
+            <p class="heading2">Description of your Role</p>
+            <p><textarea cols="50" rows="4" placeholder="Description of Role" ></textarea></p>
+            <p class="heading2">Involvement in Each Activity</p>
+            <p><textarea cols="50" rows="4" placeholder="Write about each activity in which you are involve"></textarea></p>
+            <p class="heading2">Awards or Achievements Related to Extracurriculars</p>
+            <p><textarea cols="50" rows="4" placeholder="Achievements"></textarea></p>
+           
+            <p><button>Submit</button></p>
+        </div>
+    </body>
+</html>
