@@ -1,0 +1,144 @@
+doctype html
+html
+  head
+    title Registering page
+    link(rel='stylesheet', type='text/css', href='css/registration.css')
+  body
+    .main
+      .left
+        p.heading.icon Student
+        p
+          img(src='img/home.png', class='icon') 
+          k Dashboard
+        p
+          img(src='img/save.png', class='icon') 
+          k Transfer
+        p
+          img(src='img/money.png', class='icon') 
+          k Transactions
+        p
+          img(src='img/account.png', class='icon') 
+          k Accounts
+        p
+          img(src='img/academic progress.png', class='icon') 
+          k Academic Progress
+        .left-bottom
+          p
+            img(src='img/formsettings.jpg', class='icon') 
+            k Form Settings
+          p
+            img(src='img/logout.png', class='icon') 
+            k Log Out
+      .right
+        .top
+          p
+            input(type='search', placeholder='Search for Specific Student', class='top-serach')
+          .top-right
+            span.top1
+              button.addstudent Add Student
+            span.top1
+              img(src='img/notification.jpg', class='iconn')
+            span.top1
+              img(src='img/formsettings.jpg', class='iconn')
+        .main2(style='width:110%;margin-left: 20px;')
+            .right-left1
+                .information1
+                    p.heading Student Information
+                    p Student's Name
+                    p
+                        input(type='text', class='data', placeholder="Enter Student's name")
+                    p Student Description
+                    p
+                        input(type='text', class='data', placeholder="Enter Student's name")
+                    .Arrtributes
+                        input(type='text', placeholder='Attribute 1', class='attribute')
+                        input(type='text', placeholder='Attribute 2', class='attribute')
+                        input(type='text', placeholder='Attribute 3', class='attribute')
+                        input(type='text', placeholder='Attribute 4', class='attribute')
+                .right-left2
+                    p.heading Student Images And Actions
+                    p Student Photo
+                    p
+                    .box
+                        button.uploadbutton Upload Images
+                    p Actions
+                    p
+                    input(type='text', class='data', placeholder='Add Task')
+                .right-left3
+                    p.heading Student Fees
+                    p
+                    input(type='text', class='data')
+                .right-left4
+                    p.heading Student category And Attribute
+                    p category
+                    p
+                    input(type='text', placeholder='Select Student category', class='data')
+                    p Intrest
+                    .intrest
+                        .line1
+                            p.line1box
+                                input(type='checkbox') 
+                                k Mathematics
+                            p.line1box
+                                input(type='checkbox') 
+                                k Science
+                            p.line1box
+                                input(type='checkbox') 
+                                k History
+                        .line1
+                            p.line1box
+                                input(type='checkbox') 
+                                k English
+                            p.line1box
+                                input(type='checkbox') 
+                                k Gography
+                            p.line1box
+                                input(type='checkbox') 
+                                k Art
+                        .line1
+                            p.line1box
+                                input(type='checkbox') 
+                                k Music
+                            p.line1box
+                                input(type='checkbox') 
+                                k Physical Education
+                            p.line1box
+                                input(type='checkbox') 
+                                k Foregin Language
+                        .line1
+                            p.line1box
+                                input(type='checkbox') 
+                                k Computer Science
+                            p.line1box
+                                input(type='checkbox') 
+                                k Drama
+                            p.line1box
+                                input(type='checkbox') 
+                                k Literature
+                        .line1
+                            p.line1box
+                                input(type='checkbox')
+                                k  Biology
+                            p.line1box
+                                input(type='checkbox') 
+                                k Chemistry
+                            p.line1box
+                                input(type='checkbox') 
+                                k Physics
+            .right-right1
+                .imgpreview
+                    p Student Preview
+                    p
+                        img(src='img/backgournd2.jpg', class='photo')
+                    p.article Student Article
+                        button.articlesave Save
+                .right-right2
+                    button.right-right-bottom Publish
+                    div
+                    button.right-right-bottom Schedule Meeting
+                    div
+                    button.right-right-bottom Save Changes
+                .right-right3
+                    p Student Schedule
+                    p
+                        input(type='datetime-local')
