@@ -44,7 +44,7 @@ app.use(xss());
 
 //Routes
 app.get("/", (req, res) => {
-  res.status(200).render("updateProfile");
+  res.status(200).render("profilePage0");
 });
 
 app.use("/api/v1/users", userRouter);

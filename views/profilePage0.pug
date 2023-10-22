@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Profilepage
+    link(rel='stylesheet' , type='text/css', href='css/profilePage0.css')
+  body
+    .main0
+      p.heading1 Profile Completion
+      .completingBar
+        .colour
+      .circles
+        each circle in ["personal information", "education background", "likes", "disliked subject", "extracurricular", "skills and Talent", "sports", "creativeart", "carrier aspiration", "challenges and weekness", "otherinformation"]
+          .circle
+            img(src=`img/${circle}.png`, alt='')
