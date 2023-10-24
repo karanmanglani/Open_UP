@@ -1,0 +1,373 @@
+<html>
+    <head>
+        <title>Profile page</title>
+        <link rel="stylesheet" type="text/css" href="profilepage2.css">
+    </head>
+    <body style="background-color: rgb(78, 78, 78);">
+        
+  
+<div class="demo-page" style="background-color: rgb(53, 53, 53);">
+    <div class="demo-page-navigation">
+      <nav style="background-color: black; border:none;">
+        <ul style="background-color: black; border:none; color: white;">
+          <li >
+            <a href="#installation" >
+              
+              Personal Information</a>
+          </li>
+          <li>
+            <a href="#structure">
+              
+              Educational Background</a>
+          </li>
+          <li>
+            <a href="#input-types">
+              
+              Interests and Likes</a>
+          </li>
+          <li>
+            <a href="#checkbox-and-radio">
+             
+              Dislikes</a>
+          </li>
+          <li>
+            <a href="#fieldset">
+             
+              Extracurricular Activities</a>
+          </li>
+  
+          <li>
+            <a href="#icons">
+              
+              Skills and Talents</a>
+          </li>
+          <li>
+            <a href="#validation">
+              
+              Sports and Games</a>
+          </li>
+          <li>
+            <a href="#date">
+              
+              Creative Arts</a>
+          </li>
+          <li>
+            <a href="#other">
+             
+              Career Aspirations</a>
+          </li>
+          <li>
+            <a href="#reset">
+             
+              Challenges and Weaknesses</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+    <main class="demo-page-content" style="background-color: rgb(63, 62, 62);">
+      <section style="background-color: rgb(46, 46, 46);">
+        <div class="href-target" id="intro"></div>
+        <h1 class="package-name" style="text-align: center;color:white">Profile Page</h1>
+   
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="installation"></div>
+        <h1 class="package-name" style="color:white">
+          Personal Information
+        </h1>
+        <div class="nice-form-group">
+            <label style="color:white">Full Name</label>
+            <input type="text" placeholder="Full Name" />
+          </div>
+    
+          <div class="nice-form-group">
+            <label  style="color:white">Date of Birth</label>
+            <input type="date" placeholder="Your name" />
+          </div>
+    
+          <div class="nice-form-group">
+            <label  style="color:white">Phone Number</label>
+            <input type="number" placeholder="Phone Number"  style="width:100%"/>
+          </div>
+          <div class="nice-form-group">
+            <label  style="color:white">Email Id</label>
+            <input type="email" placeholder="email" />
+          </div>
+      </section>
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="structure"></div>
+        <h1 style="color:white">
+         Educational Background
+        </h1>
+  
+        <div class="nice-form-group">
+          <label style="color:white">University/College Name</label>
+          <input type="text" placeholder="Name of College/University" />
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white"> Major Field of study</label>
+        </div>
+        <div class="line" style="color:white" >
+            <p class="box"  value="1"><input type="radio" name="option" >Bio Medical Engineering</p>
+            <p class="box" value="1"><input type="radio" name="option" >Architecture</p>
+            <p class="box" value="1"><input type="radio" name="option">Applied Geology</p>
+        </div>
+        <div class="line" style="color:white">
+            <p class="box"><input type="radio" name="option">Bio Technology</p>
+            <p class="box"><input type="radio" name="option">Chemical Engineering</p>
+            <p class="box"><input type="radio" name="option">Civil Engineering</p>
+        </div>
+        <div class="line" style="color:white">
+            <p class="box"><input type="radio" name="option">Computer Science & Engineering</p>
+            <p class="box"><input type="radio" name="option">Electrical Engineering</p>
+            <p class="box"><input type="radio" name="option">Electronics & Communication Engineering</p>
+        </div>
+        <div class="line" style="color:white">
+            <p class="box"><input type="radio" name="option">Information Technology</p>
+            <p class="box"><input type="radio" name="option">Master In Computer Application</p>
+            <p class="box"><input type="radio" name="option">Mechanical Engineering</p>
+        </div>
+        <div class="line" style="color:white">
+            <p class="box"><input type="radio" name="option">Mining Engineering</p>
+            <p class="box"><input type="radio" name="option">Metallurgy Engineering</p>
+        </div>
+        
+        <div class="nice-form-group">
+          <label style="color:white">Current Year of Study</label>
+          <p>
+            <select name="years" id="year" style="width:100%;height:30px;border-radius: 5px;">
+            <option value="none">--select--</option>
+              <option value="1">First Year</option>
+              <option value="2">Second Year</option>
+              <option value="3">Third Year</option>
+              <option value="4">Fourth Year</option>
+            </select>
+        </p>
+          </div>
+      </section >
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="input-types"></div>
+        <h1 style="color:white">
+            Interests and Likes
+        </h1>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Hobbies</label>
+          <input type="text" placeholder="Type Your Hobbies" value="" />
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Favourite Books</label>
+          <input type="text" placeholder="Name of book" value="" />
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Favourite Music</label>
+          <input type="text" placeholder="Name of Music" value="" />
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Favourite Subject</label>
+          <input type="text" placeholder="Favourite Subject" value="" />
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Sports Interests</label>
+          <input type="text" placeholder="Favourite Sport" />
+        </div>
+      </section>
+  
+      <section style="background-color: rgb(35, 35, 35);color:white">
+        <div class="href-target" id="checkbox-and-radio"></div>
+        <h1 style="color:white">
+          Dislikes
+        </h1>
+          <div class="nice-form-group" style="color:white">
+            <label  style="color:white" >Disliked Subject</label>
+            <input type="text" placeholder="Disliked Subject" />
+          </div>
+  
+          <div class="nice-form-group">
+            <label style="color:white">Disliked Hobbies</label>
+            <input type="text" placeholder="Name of Hobbies" />
+          </div>
+          <div class="nice-form-group">
+            <label style="color:white">Any Specific Triggers or Discomforts</label>
+            <input type="text" placeholder="Name of Triggers" />
+          </div>
+      </section>
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="fieldset"></div>
+        <h1 style="color:white">
+          Extracurricular Activities
+        </h1>
+        <div class="nice-form-group " style="color:white">
+          <label style="color:white"> Clubs or Organizations to whom you are part</label>
+        </div>
+        <div class="line" style="color:white" >
+          <p class="box"><input type="checkbox">Cultural Committee</p>
+          <p class="box"><input type="checkbox">The Sports Committee</p>
+          <p class="box"><input type="checkbox">Literary Committee</p>
+       
+          <p class="box"><input type="checkbox">Click Club</p>
+          <p class="box"><input type="checkbox">Sahyog-The Mentorship Club</p>
+          <p class="box"><input type="checkbox">Raaga-The Music Club</p>
+        
+          <p class="box"><input type="checkbox">Go Green Club</p>
+          <p class="box"><input type="checkbox">Rajbhasha Samiti</p>
+          <p class="box"><input type="checkbox">TEDxNITRaipur</p>
+      
+          <p class="box"><input type="checkbox">NCC</p>
+          <p class="box"><input type="checkbox">Dance club</p>
+          <p class="box"><input type="checkbox">Interact Club</p>
+      
+          <p class="box"><input type="checkbox">Abhinay</p>
+          <p class="box"><input type="checkbox">NSS</p>
+          <p class="box"><input type="checkbox">Spic MACYa</p>
+
+          <p class="box"><input type="checkbox">Ethics club</p>
+          <p class="box"><input type="checkbox">UBA (Unnat Bharat Abhiyan)</p>
+          <p class="box"><input type="checkbox">Finance & Consulting Club</p>
+      
+          <p class="box"><input type="checkbox">The Technocracy</p>
+          <p class="box"><input type="checkbox">Robotics Club</p>
+          <p class="box"><input type="checkbox">NITRR MOTO SPORTS</p>
+  
+          <p class="box"><input type="checkbox">Innovation Cell</p>
+          <p class="box"><input type="checkbox">E-Cell</p>
+      </div>
+  
+      <div class="nice-form-group">
+        <label style="color:white">Role in the Club</label>
+        <input type="text" placeholder="Role in the club" />
+      </div>
+      <div class="nice-form-group">
+        <label style="color:white">Description of Club</label>
+        <textarea cols="50" rows="4" placeholder="Description of club"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+      </div>
+      <div class="nice-form-group">
+        <label style="color:white">Description of your Role</label>
+        <textarea cols="50" rows="4" placeholder="Description of your Role"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+      </div>
+      <div class="nice-form-group">
+        <label style="color:white">Involvement in Each Activity</label>
+        <textarea cols="50" rows="4" placeholder="Write about each activity in which you are involve"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+      </div>
+        
+      <div class="nice-form-group">
+        <label style="color:white">Achievements</label>
+        <textarea cols="50" rows="4" placeholder="Awards or Achievements Related to Extracurricular Activities"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+      </div>
+      </section>
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="icons"></div>
+        <h1 style="color:white">
+          Skills and Talents
+        </h1>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Name of Skill</label>
+          <input type="text" placeholder="Skill Name"/>
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Name of Certification Organization</label>
+          <input type="url" placeholder="Name of Organization"  />
+        </div>
+  
+        <div class="nice-form-group" style="color:white">
+          <label style="color:white">Work Exprience if any</label>
+          From
+          <input type="date" style="width:40%"/>
+          To
+          <input type="date" style="width:40%"/>
+        </div>
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="validation"></div>
+        <h1 style="color:white">
+          
+          Sports and Games
+        </h1>
+  
+        <div class="nice-form-group">
+          <div class="nice-form-group">
+            <label style="color:white">Sports Played</label>
+            <textarea cols="50" rows="4" placeholder="Name all the sports with one line Description"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+          </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Favourite Sport</label>
+          <input type="text" placeholder="Name of Sport"/>
+        </div>
+        <div class="nice-form-group">
+          <label style="color:white">Achievements and Awards in the Sport and Games</label>
+          <input type="text" placeholder="Achievements"/>
+        </div>
+       
+      </section>
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="date"></div>
+        <h1 style="color:white">
+          Creative Arts
+        </h1>
+        
+        <div class="nice-form-group">
+          <label style="color:white">Name of Creative Hobby</label>
+          <input type="text" placeholder="Singing/Dancing/Acting/Instrument Playing/Art and Craft/Other"  />
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Description</label>
+          <textarea cols="50" rows="4" placeholder="Describe the Hobby"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Achievements or Awards in that Hobby</label>
+          <input type="text" placeholder="Achievements"/>
+        </div>
+      </section>
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="other"></div>
+        <h1 style="color:white">
+          Career Aspirations
+        </h1>
+  
+        <div class="nice-form-group">
+          <label style="color:white">What you what to become? in future</label>
+          <input type="text" placeholder="Singer/Dancer/Programmer/other"/>
+        </div>
+  
+        <div class="nice-form-group">
+          <label style="color:white">Description</label>
+          <textarea cols="50" rows="4" placeholder="Describe your Ambitions and Goal"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+        </div>
+      </section>
+  
+      <section style="background-color: rgb(35, 35, 35);">
+        <div class="href-target" id="reset"></div>
+        <h1 style="color:white">
+          Challenges and Weakness
+        </h1>
+        <div class="nice-form-group">
+          <label style="color:white">What are the areas where you face Challenges</label>
+          <input type="text" placeholder="Studies/sports/programming/other"/>
+          <div class="nice-form-group">
+            <label style="color:white">Description</label>
+            <textarea cols="50" rows="4" placeholder="Describe about your Weakness"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
+          </div>
+        </div>
+  
+      </section>
+    </main>
+  </div>
+</body>
+</html>
