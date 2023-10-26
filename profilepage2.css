@@ -10,3 +10,58 @@
     background-color: rgb(109, 109, 0);
     color:white;
   }
+ /* css of the Header File */
+ img[class="logoimage"]{
+  width:3cm;
+  height:1.2cm;
+}
+header[class="header"]{
+margin-top: 20px;
+margin-bottom:20px;
+}
+
+button[class="loginbutton"]{
+  width: 2cm;
+  height:0.8cm;
+  background-color:8908eb;
+  color:white;
+  border:none;
+  outline:none;
+  border-radius: 5px;
+}
+button[class="loginbutton"]:hover{
+  background-color: rgb(45, 151, 0);
+}
+button[class="loginbutton"]:active{
+  background-color: rgb(0, 98, 7);
+  color:white;
+}
+a[class="headerlink"]:hover{
+  opacity: 100%;
+}
+a[class="headerlink"]:active{
+  opacity: 100%;
+  color:8908eb;
+}
+ul[class="headerlist"]{
+  list-style-type: none;
+  display: flex;
+  margin-left:10px;
+  position: absolute;
+  top:5%;
+  left:7%;
+
+}
+li[class="headerHeading"]{
+  margin-left: 1cm;
+}
+div[class="buttons"]{
+  position: absolute;
+  top:15px;
+  left:85%;
+}
+a[class="headerlink"]{
+text-decoration: none;
+opacity: 80%;
+color:white;
+}
