@@ -65,3 +65,38 @@ text-decoration: none;
 opacity: 80%;
 color:white;
 }
+
+
+
+/* css of the footer file */
+
+
+
+ul[class="footerlist"]{
+  display: flex;
+ padding-left: 0px;
+width:fit-content;
+margin:auto;
+list-style-type: none;
+}
+li[class="footerHeading"]{
+  margin-left: 0.5cm;
+}
+a[class="footerlink"]{
+  color:white;
+  text-decoration: none;
+  opacity: 80%;
+}
+a[class="footerlink"]:hover{
+  opacity: 100%;
+}
+a[class="footerlink"]:active{
+  opacity: 100%;
+  color:8908eb;
+}
+p[class="footer__copyright"]{
+width:fit-content;
+color:white;
+margin:auto;
+margin-top: 1cm;
+}
