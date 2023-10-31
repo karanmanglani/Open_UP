@@ -11,6 +11,7 @@ const xss = require("xss-clean");
 const { base } = require("./models/userModel");
 const viewRouter = require("./routes/viewRoutes");
 const cookieParser = require("cookie-parser");
+const compression = require("compression");
 
 const app = express();
 
@@ -44,6 +45,8 @@ app.use(mongoSanitize());
 
 // Data sanitization against XSS
 app.use(xss());
+
+app.use(compression());
 
 // Test middleware
 app.use((req, res, next) => {
