@@ -11,17 +11,24 @@ html
                 div(class='heading')
                     p ALREADY MEMBERS
             
-                div 
-                    p
-                        input(type='email' placeholder='Email')
-                    
-                    p
-                        input(type='password' placeholder='Password')
-                    
-                    p 
-                        button(class='sign') Sign In
-                    
-                    p Don't have Account yet?
+                div
+                    form.form.form--login
+                        p
+                            input(type='email', placeholder='Email' , required , id='email')
+                        
+                        p
+                            input(type='password' placeholder='Password', required , minlength='8', id='password')
+                        
+                        p 
+                            button(class='sign') Sign In
+                        
+                        p Don't have Account yet?
 
-                    p(class='link')
-                        a( href='') Create an Account
+                        p(class='link')
+                            a( href='/signup') Create an Account
+        script(src='/js/axios.js', type ='module')
+        script(src='/js/login.js', type='module')
+
+        //- script(src='/js/bundle.js' , type="module") 
+           
+        
