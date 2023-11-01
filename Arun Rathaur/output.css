@@ -1,0 +1,26 @@
+img{
+    width: 5cm;
+    height:5cm;
+    border-radius: 10px;
+    padding-left:20px;
+ }
+ div[class="friends"]{
+     display: flex;
+     justify-content: center;
+     background-color: black;
+     padding-top:2cm;
+     padding-bottom: 6cm;
+     color:white
+ }
+ p[class="output"]{
+     text-align: center;
+ }
+div[class="suggestedoutput"]{
+ color:white;
+ background-color: black;
+ text-align: center;
+}
+p[class="suggested"]{
+ padding-top: 1cm;
+ font-size: 35px;
+}

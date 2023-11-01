@@ -1,0 +1,80 @@
+.row2_contact{
+    font-family: poppins;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    width: 20cm;
+    margin: auto;
+
+}
+.image-contact{
+    width:5cm;
+    height:5cm;
+    margin-top: 12%;
+    border-color: aqua;
+    border: solid;
+    border-radius: 10px;
+}
+.main-contact-heading{
+    font-family: poppins;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+.main-contact-row2{
+    font-family: poppins;
+    text-align: center;
+    font-weight:400;
+    font-size: 20px;
+}
+.text-contact{
+    width:10cm;
+    height:0.8cm;
+    margin-right: 3cm;
+}
+textarea[class="text-contact1"]{
+ width:10cm;
+ max-width:10cm;   
+}
+div[class="main_contact"]{
+    background-color: rgb(41, 41, 41);
+    color:white;
+    margin-top: 0px;
+    padding-bottom: 1cm;
+}
+.button-contact{
+    width:10cm;
+    height:0.8cm;
+    background-color: blue;
+    color:white;
+    border:none;
+    outline:none;
+}
+.button-contact:hover{
+    background-color: rgb(2, 2, 163);
+
+}
+.button-contact:active{
+    background-color: rgb(0, 0, 79);
+}
+.row3-cotact{
+    display: flex;
+}
+p[class="deaitls-contact"]{
+    margin: 2px;
+    width:8cm;
+}
+p[ class="deaitls-contact1"]{
+    margin: 2px;
+    width:8cm;
+    font-weight: 900;
+    font-size: 25px; 
+}
+div[class="row3-contact-foot"]{
+    padding:20px;
+    background-color: rgb(20, 20, 20);
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    font-family: poppins;
+}
