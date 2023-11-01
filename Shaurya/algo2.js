@@ -90,7 +90,15 @@ const studentToMatch = students[0];
 const potentialFriends = findPotentialFriends(studentToMatch, matchingThreshold);
 
 console.log(`Potential Friends for ${studentToMatch.name}:`);
+
 for (const friend of potentialFriends) {
+  // let x=document.createElement("p");
+  // x.className="hello";
+  // x.textContent="hi";
+  // document.body.append(x);
+  // console.log(x);
+  // document.querySelector('p.suggestedFriends').textContent = `Hi`;
+  //document.querySelector('suggestedFriend').textContent = ` Suggested friends for you are ${friend.name} (Similarity Score: ${friend.similarityScore})`;
   console.log(`${friend.name} (Similarity Score: ${friend.similarityScore})`);
 }
 

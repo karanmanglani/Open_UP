@@ -1,4 +1,9 @@
 if user
-    p.name= user.name 
 
-    script(src="/js/findFriend.js")
+    p Hi 
+        span.name= user.name 
+    
+    p.suggestedFriends Suggested friends for you are
+
+    script(src='/js/axios.js', type="module")
+    script(src="/js/findFriend.js",type="module")

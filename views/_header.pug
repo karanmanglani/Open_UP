@@ -12,6 +12,11 @@ header.header
         a.headerlink(href='#') Terms and Conditions
       li.headerHeading 
         a.headerlink(href='#') Contact Us
-  .buttons
-    a.loginbutton(href='/login') Login
-    a.loginbutton(href='/signup') Sign Up
+  if user 
+    .buttons
+      a.loginbutton(href='/userProfile') Update Profile
+      a.loginbutton(href='/api/v1/users/logout') Logout
+  else
+    .buttons
+      a.loginbutton(href='/login') Login
+      a.loginbutton(href='/signup') Sign Up
