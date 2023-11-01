@@ -60,7 +60,7 @@
             </ul>
         </nav>
       </div>
-      <main class="demo-page-content" style="background-color: rgb(63, 62, 62);">
+      <div class="demo-page-content" style="background-color: rgb(63, 62, 62);">
         <section style="background-color: rgb(46, 46, 46);">
         <div class="href-target" id="intro"></div>
         <h1 class="package-name" style="text-align: center;color:white">Profile Page</h1>
@@ -75,7 +75,7 @@
           </div>
           <div class="nice-form-group">
             <label  style="color:white">Date of Birth</label>
-            <input type="date" placeholder="Your name" />
+            <input type="date" placeholder="Your name" style="width:100%;"/>
           </div>
           <div class="nice-form-group">
             <label  style="color:white">Phone Number</label>
@@ -98,29 +98,29 @@
           <div class="nice-form-group">
             <label style="color:white"> Major Field of study</label>
           </div>
-          <div class="line" style="color:white" >
-            <p class="box"  value="1"><input type="radio" name="option" >Bio Medical Engineering</p>
-            <p class="box" value="1"><input type="radio" name="option" >Architecture</p>
-            <p class="box" value="1"><input type="radio" name="option">Applied Geology</p>
+          <div class="line" style="color:white;display: flex;" >
+            <p class="box"  value="1" style="width:4cm"><input type="radio" name="option" >Bio Medical Engineering</p>
+            <p class="box" value="1" style="width:4cm;"><input type="radio" name="option" >Architecture</p>
+            <p class="box" value="1" style="width: 4cm;"><input type="radio" name="option">Applied Geology</p>
           </div>
-          <div class="line" style="color:white">
-            <p class="box"><input type="radio" name="option">Bio Technology</p>
-            <p class="box"><input type="radio" name="option">Chemical Engineering</p>
-            <p class="box"><input type="radio" name="option">Civil Engineering</p>
+          <div class="line" style="color:white ;display: flex;">
+            <p class="box" style="width:4cm"><input type="radio" name="option">Bio Technology</p>
+            <p class="box" style="width:4cm"><input type="radio" name="option">Chemical Engineering</p>
+            <p class="box" style="width:4cm"><input type="radio" name="option">Civil Engineering</p>
           </div>
-          <div class="line" style="color:white">
-            <p class="box"><input type="radio" name="option">Computer Science & Engineering</p>
-            <p class="box"><input type="radio" name="option">Electrical Engineering</p>
-            <p class="box"><input type="radio" name="option">Electronics & Communication Engineering</p>
+          <div class="line" style="color:white ;display: flex;">
+            <p class="box" style="width:4cm"><input type="radio" name="option">Computer Science & Engineering</p>
+            <p class="box" style="width:4cm"><input type="radio" name="option">Electrical Engineering</p>
+            <p class="box" style="width:4cm"><input type="radio" name="option">Electronics & Communication Engineering</p>
           </div>
-          <div class="line" style="color:white">
-            <p class="box"><input type="radio" name="option">Information Technology</p>
-            <p class="box"><input type="radio" name="option">Master In Computer Application</p>
-            <p class="box"><input type="radio" name="option">Mechanical Engineering</p>
+          <div class="line" style="color:white ;display: flex;">
+            <p class="box" style="width:4cm"><input type="radio" name="option">Information Technology</p>
+            <p class="box" style="width:4cm"><input type="radio" name="option">Master In Computer Application</p>
+            <p class="box" style="width:4cm"><input type="radio" name="option">Mechanical Engineering</p>
           </div>
-          <div class="line" style="color:white">
-            <p class="box"><input type="radio" name="option">Mining Engineering</p>
-            <p class="box"><input type="radio" name="option">Metallurgy Engineering</p>
+          <div class="line" style="color:white ;display: flex;">
+            <p class="box" style="width:4cm"><input type="radio" name="option">Mining Engineering</p>
+            <p class="box" style="width:4cm"><input type="radio" name="option">Metallurgy Engineering</p>
           </div>
           <div class="nice-form-group">
             <label style="color:white">Current Year of Study</label>
@@ -187,39 +187,48 @@
           <div class="nice-form-group " style="color:white">
             <label style="color:white"> Clubs or Organizations to whom you are part</label>
           </div>
-          <div class="line" style="color:white" >
-            <p class="box"><input type="checkbox">Cultural Committee</p>
-            <p class="box"><input type="checkbox">The Sports Committee</p>
-            <p class="box"><input type="checkbox">Literary Committee</p>
-        
-            <p class="box"><input type="checkbox">Click Club</p>
-            <p class="box"><input type="checkbox">Sahyog-The Mentorship Club</p>
-            <p class="box"><input type="checkbox">Raaga-The Music Club</p>
-          
-            <p class="box"><input type="checkbox">Go Green Club</p>
-            <p class="box"><input type="checkbox">Rajbhasha Samiti</p>
-            <p class="box"><input type="checkbox">TEDxNITRaipur</p>
-        
-            <p class="box"><input type="checkbox">NCC</p>
-            <p class="box"><input type="checkbox">Dance club</p>
-            <p class="box"><input type="checkbox">Interact Club</p>
-        
-            <p class="box"><input type="checkbox">Abhinay</p>
-            <p class="box"><input type="checkbox">NSS</p>
-            <p class="box"><input type="checkbox">Spic MACYa</p>
-
-            <p class="box"><input type="checkbox">Ethics club</p>
-            <p class="box"><input type="checkbox">UBA (Unnat Bharat Abhiyan)</p>
-            <p class="box"><input type="checkbox">Finance & Consulting Club</p>
-        
-            <p class="box"><input type="checkbox">The Technocracy</p>
-            <p class="box"><input type="checkbox">Robotics Club</p>
-            <p class="box"><input type="checkbox">NITRR MOTO SPORTS</p>
-    
-            <p class="box"><input type="checkbox">Innovation Cell</p>
-            <p class="box"><input type="checkbox">E-Cell</p>
+          <div class="Extracurricular Activities" >
+            <div class="line" style="color:white;display: flex; padding-top: 1cm;" >
+              <div class="box" style="width:4cm;padding-bottom: 1cm;;"><input type="checkbox" >Cultural Committee</div>
+              <div class="box" style="width:4cm;"><input type="checkbox"  >The Sports Committee</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >Literary Committee</div>
+            </div>
+            <div class="line" style="color:white;display: flex;" >
+              <div class="box" style="width:4cm;padding-bottom: 1cm;"><input type="checkbox" >Click Club</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >Sahyog-The Mentorship Club</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >Raaga-The Music Club</div>
+            </div>
+            <div class="line" style="color:white;display: flex;" >
+              <div class="box" style="width:4cm;padding-bottom: 1cm;"><input type="checkbox" >Go Green Club</div>
+              <div class="box" style="width:4cm;"><input type="checkbox"  >Rajbhasha Samiti</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >TEDxNIT Raipur</div>
+            </div>
+            <div class="line" style="color:white;display: flex;" >
+              <div class="box" style="width:4cm;padding-bottom: 1cm;"><input type="checkbox" >NCC</div>
+              <div class="box" style="width:4cm;"><input type="checkbox"  >Dance Club</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >Interact Club</div>
+            </div>
+            <div class="line" style="color:white;display: flex;" >
+              <div class="box" style="width:4cm;padding-bottom: 1cm;"><input type="checkbox" >Abhinay</div>
+              <div class="box" style="width:4cm;"><input type="checkbox"  >NSS</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >Spic MACYa</div>
+            </div>
+            <div class="line" style="color:white;display: flex;" >
+              <div class="box" style="width:4cm;padding-bottom: 1cm;"><input type="checkbox" >Ethic club</div>
+              <div class="box" style="width:4cm;"><input type="checkbox"  >Unnat Bharat Abhiyan</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >Finance & Consulting Club</div>
+            </div>
+            <div class="line" style="color:white;display: flex;" >
+              <div class="box" style="width:4cm;padding-bottom: 1cm;"><input type="radio" name="option1">The Technocracy</div>
+              <div class="box" style="width:4cm;"><input type="checkbox"  >Robotics Club</div>
+              <div class="box" style="width:4cm;"><input type="checkbox" >NITRR MOTO SPORTS</div>
+            </div>
+            <div class="line" style="color:white;display: flex;" >
+              <div class="box" style="width:4cm;"><input type="checkbox" >Innovation Cell</div>
+              <div class="box" style="width:4cm;"><input type="checkbox"  >E-Cell</div>
+            </div>
           </div>
-          <div class="nice-form-group">
+          <!-- <div class="nice-form-group">
           <label style="color:white">Role in the Club</label>
           <input type="text" placeholder="Role in the club" />
           </div>
@@ -238,28 +247,40 @@
           <div class="nice-form-group">
           <label style="color:white">Achievements</label>
           <textarea cols="50" rows="4" placeholder="Awards or Achievements Related to Extracurricular Activities"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
-          </div>
+          </div> -->
         </section>
         <section style="background-color: rgb(35, 35, 35);">
         <div class="href-target" id="icons"></div>
         <h1 style="color:white">
           Skills and Talents
         </h1>
-        <div class="nice-form-group">
-          <label style="color:white">Name of Skill</label>
-          <input type="text" placeholder="Skill Name"/>
+        <div class="flexing-skills-talents" >
+          <div class="line" style="color:white;display: flex;" >
+            <div class="box" style="width:3cm;"><input type="radio" name="option1">Chess</div>
+            <div class="box" style="width:3cm;"><input type="radio" name="option1" >Cricket</div>
+            <div class="box" style="width:3cm;"><input type="radio" name="option1">Football</div>
+          </div>
+          <div class="line" style="color:white;display: flex;" >
+            <div class="box" style="width:3cm;"><input type="radio" name="option1">Singing</div>
+            <div class="box" style="width:3cm;"><input type="radio" name="option1" >Dancing</div>
+            <div class="box" style="width:3cm;"><input type="radio" name="option1">Guitar</div>
+          </div>
+          <div class="line" style="color:white;display: flex;" >
+            <div class="box" style="width:3cm;"><input type="radio" name="option1">Beatboxing</div>
+            <div class="box" style="width:3cm;"><input type="radio" name="option1" >Coding</div>
+          </div>
         </div>
         <div class="nice-form-group">
           <label style="color:white">Name of Certification Organization</label>
           <input type="url" placeholder="Name of Organization"  />
         </div>
-        <div class="nice-form-group" style="color:white">
+        <!-- <div class="nice-form-group" style="color:white">
             <label style="color:white">Work Exprience if any</label>
             From
             <input type="date" style="width:40%"/>
             To
             <input type="date" style="width:40%"/>
-        </div>
+        </div> -->
         <section style="background-color: rgb(35, 35, 35);">
           <div class="href-target" id="validation"></div>
           <h1 style="color:white">
@@ -288,14 +309,14 @@
             <label style="color:white">Name of Creative Hobby</label>
             <input type="text" placeholder="Singing/Dancing/Acting/Instrument Playing/Art and Craft/Other"  />
           </div>
-          <div class="nice-form-group">
+          <!-- <div class="nice-form-group">
             <label style="color:white">Description</label>
             <textarea cols="50" rows="4" placeholder="Describe the Hobby"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
-          </div>
-          <div class="nice-form-group">
+          </div> -->
+          <!-- <div class="nice-form-group">
             <label style="color:white">Achievements or Awards in that Hobby</label>
             <input type="text" placeholder="Achievements"/>
-          </div>
+          </div> -->
         </section>
         <section style="background-color: rgb(35, 35, 35);">
           <div class="href-target" id="other"></div>
@@ -306,10 +327,10 @@
             <label style="color:white">What you what to become? in future</label>
             <input type="text" placeholder="Singer/Dancer/Programmer/other"/>
           </div>
-          <div class="nice-form-group">
+          <!-- <div class="nice-form-group">
             <label style="color:white">Description</label>
             <textarea cols="50" rows="4" placeholder="Describe your Ambitions and Goal"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
-          </div>
+          </div> -->
         </section>
         <section style="background-color: rgb(35, 35, 35);">
           <div class="href-target" id="reset"></div>
@@ -319,13 +340,16 @@
           <div class="nice-form-group">
             <label style="color:white">What are the areas where you face Challenges</label>
             <input type="text" placeholder="Studies/sports/programming/other"/>
-            <div class="nice-form-group">
+            <!-- <div class="nice-form-group">
               <label style="color:white">Description</label>
               <textarea cols="50" rows="4" placeholder="Describe about your Weakness"  style="width:100%;max-width: 100%;min-width: 100%;"></textarea>
-            </div>
+            </div> -->
           </div>
         </section>
-      </main>
+        <div style="display: flex;justify-content: center;">
+          <button class="submit-button">Submit</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

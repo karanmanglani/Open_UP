@@ -1,0 +1,307 @@
+head
+  title Profile page
+  link(rel='stylesheet' type='text/css' href='profilepage2.css')
+.demo-page(style='background-color: rgb(53, 53, 53);')
+  .demo-page-navigation
+    nav(style='background-color: black; border:none;')
+      ul(style='background-color: black; border:none; color: white;')
+        li
+          a(href='#installation')
+            | Personal Information
+        li
+          a(href='#structure')
+            | Educational Background
+        li
+          a(href='#input-types')
+            | Interests and Likes
+        li
+          a(href='#checkbox-and-radio')
+            | Dislikes
+        li
+          a(href='#fieldset')
+            | Extracurricular Activities
+        li
+          a(href='#icons')
+            | Skills and Talents
+        li
+          a(href='#validation')
+            | Sports and Games
+        li
+          a(href='#date')
+            | Creative Arts
+        li
+          a(href='#other')
+            | Career Aspirations
+        li
+          a(href='#reset')
+            | Challenges and Weaknesses
+  .demo-page-content(style='background-color: rgb(63, 62, 62);')
+    #intro.href-target
+    h1.package-name(style='text-align: center;color:white;font-size: 30;') Profile Page
+    section(style='background-color: rgb(35, 35, 35);')
+      #installation.href-target
+      h1.package-name(style='color:white')
+        | Personal Information
+      .nice-form-group
+        label(style='color:white') Full Name
+        input(type='text' placeholder='Full Name')
+      .nice-form-group
+        label(style='color:white') Date of Birth
+        input(type='date' placeholder='Your name' style='width:100%;')
+      .nice-form-group
+        label(style='color:white') Phone Number
+        input(type='number' placeholder='Phone Number' style='width:100%')
+      .nice-form-group
+        label(style='color:white') Email Id
+        input(type='email' placeholder='email')
+    section(style='background-color: rgb(35, 35, 35);')
+      #structure.href-target
+      h1(style='color:white')
+        | Educational Background
+      .nice-form-group
+        label(style='color:white') University/College Name
+        input(type='text' placeholder='Name of College/University')
+      .nice-form-group
+        label(style='color:white')  Major Field of study
+      .line(style='color:white;display: flex;')
+        p.box(value='1' style='width:4cm')
+          input(type='radio' name='option')
+          | Bio Medical Engineering
+        p.box(value='1' style='width:4cm;')
+          input(type='radio' name='option')
+          | Architecture
+        p.box(value='1' style='width: 4cm;')
+          input(type='radio' name='option')
+          | Applied Geology
+      .line(style='color:white ;display: flex;')
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Bio Technology
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Chemical Engineering
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Civil Engineering
+      .line(style='color:white ;display: flex;')
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Computer Science &amp; Engineering
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Electrical Engineering
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Electronics &amp; Communication Engineering
+      .line(style='color:white ;display: flex;')
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Information Technology
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Master In Computer Application
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Mechanical Engineering
+      .line(style='color:white ;display: flex;')
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Mining Engineering
+        p.box(style='width:4cm')
+          input(type='radio' name='option')
+          | Metallurgy Engineering
+      .nice-form-group
+        label(style='color:white') Current Year of Study
+        p
+          select#year(name='years' style='width:100%;height:30px;border-radius: 5px;')
+            option(value='none') --select--
+            option(value='1') First Year
+            option(value='2') Second Year
+            option(value='3') Third Year
+            option(value='4') Fourth Year
+    section(style='background-color: rgb(35, 35, 35);')
+      #input-types.href-target
+      h1(style='color:white')
+        | Interests and Likes
+      .nice-form-group
+        label(style='color:white') Hobbies
+        input(type='text' placeholder='Type Your Hobbies' value='')
+      .nice-form-group
+        label(style='color:white') Favourite Books
+        input(type='text' placeholder='Name of book' value='')
+      .nice-form-group
+        label(style='color:white') Favourite Music
+        input(type='text' placeholder='Name of Music' value='')
+      .nice-form-group
+        label(style='color:white') Favourite Subject
+        input(type='text' placeholder='Favourite Subject' value='')
+      .nice-form-group
+        label(style='color:white') Sports Interests
+        input(type='text' placeholder='Favourite Sport')
+    section(style='background-color: rgb(35, 35, 35);color:white')
+      #checkbox-and-radio.href-target
+      h1(style='color:white')
+        | Dislikes
+      .nice-form-group(style='color:white')
+        label(style='color:white') Disliked Subject
+        input(type='text' placeholder='Disliked Subject')
+      .nice-form-group
+        label(style='color:white') Disliked Hobbies
+        input(type='text' placeholder='Name of Hobbies')
+      .nice-form-group
+        label(style='color:white') Any Specific Triggers or Discomforts
+        input(type='text' placeholder='Name of Triggers')
+    section(style='background-color: rgb(35, 35, 35);')
+      #fieldset.href-target
+      h1(style='color:white')
+        | Extracurricular Activities
+      .nice-form-group(style='color:white')
+        label(style='color:white')  Clubs or Organizations to whom you are part
+      .Extracurricular.Activities
+        .line(style='color:white;display: flex; padding-top: 1cm;')
+          .box(style='width:4cm;padding-bottom: 1cm;;')
+            input(type='checkbox')
+            | Cultural Committee
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | The Sports Committee
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Literary Committee
+        .line(style='color:white;display: flex;')
+          .box(style='width:4cm;padding-bottom: 1cm;')
+            input(type='checkbox')
+            | Click Club
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Sahyog-The Mentorship Club
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Raaga-The Music Club
+        .line(style='color:white;display: flex;')
+          .box(style='width:4cm;padding-bottom: 1cm;')
+            input(type='checkbox')
+            | Go Green Club
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Rajbhasha Samiti
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | TEDxNIT Raipur
+        .line(style='color:white;display: flex;')
+          .box(style='width:4cm;padding-bottom: 1cm;')
+            input(type='checkbox')
+            | NCC
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Dance Club
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Interact Club
+        .line(style='color:white;display: flex;')
+          .box(style='width:4cm;padding-bottom: 1cm;')
+            input(type='checkbox')
+            | Abhinay
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | NSS
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Spic MACYa
+        .line(style='color:white;display: flex;')
+          .box(style='width:4cm;padding-bottom: 1cm;')
+            input(type='checkbox')
+            | Ethic club
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Unnat Bharat Abhiyan
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Finance &amp; Consulting Club
+        .line(style='color:white;display: flex;')
+          .box(style='width:4cm;padding-bottom: 1cm;')
+            input(type='radio' name='option1')
+            | The Technocracy
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Robotics Club
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | NITRR MOTO SPORTS
+        .line(style='color:white;display: flex;')
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | Innovation Cell
+          .box(style='width:4cm;')
+            input(type='checkbox')
+            | E-Cell
+    h1(style='color:white')
+      | Skills and Talents
+    .flexing-skills-talents
+      .line(style='color:white;display: flex;')
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Chess
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Cricket
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Football
+      .line(style='color:white;display: flex;')
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Singing
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Dancing
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Guitar
+      .line(style='color:white;display: flex;')
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Beatboxing
+        .box(style='width:3cm;')
+          input(type='radio' name='option1')
+          | Coding
+    .nice-form-group
+      label(style='color:white') Name of Certification Organization
+      input(type='url' placeholder='Name of Organization')
+    section(style='background-color: rgb(35, 35, 35);')
+      #validation.href-target
+      h1(style='color:white')
+        | Sports and Games
+      .nice-form-group
+        .nice-form-group
+          label(style='color:white') Sports Played
+          textarea(cols='50' rows='4' placeholder='Name all the sports with one line Description' style='width:100%;max-width: 100%;min-width: 100%;')
+        .nice-form-group
+          label(style='color:white') Favourite Sport
+          input(type='text' placeholder='Name of Sport')
+        .nice-form-group
+          label(style='color:white') Achievements and Awards in the Sport and Games
+          input(type='text' placeholder='Achievements')
+    section(style='background-color: rgb(35, 35, 35);')
+      #date.href-target
+      h1(style='color:white')
+        | Creative Arts
+      .nice-form-group
+        label(style='color:white') Name of Creative Hobby
+        input(type='text' placeholder='Singing/Dancing/Acting/Instrument Playing/Art and Craft/Other')
+    section(style='background-color: rgb(35, 35, 35);')
+      #other.href-target
+      h1(style='color:white')
+        | Career Aspirations
+      .nice-form-group
+        label(style='color:white') What you what to become? in future
+        input(type='text' placeholder='Singer/Dancer/Programmer/other')
+    section(style='background-color: rgb(35, 35, 35);')
+      #reset.href-target
+      h1(style='color:white')
+        | Challenges and Weakness
+      .nice-form-group
+        label(style='color:white') What are the areas where you face Challenges
+        input(type='text' placeholder='Studies/sports/programming/other')
+    div(style='display: flex;justify-content: center;')
+      button.submit-button Submit
