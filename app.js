@@ -12,13 +12,17 @@ const { base } = require("./models/userModel");
 const viewRouter = require("./routes/viewRoutes");
 const cookieParser = require("cookie-parser");
 const compression = require("compression");
-
+const cors = require("cors");
+const User = require("./models/userModel");
 const app = express();
 
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
 // 1.) Global Middlewares
+
+app.use(cors());
+app.options("*", cors());
 
 // Serving static files
 app.use(express.static(path.join(__dirname, "public")));
@@ -37,7 +41,9 @@ const limiter = rateLimit({
 });
 app.use("/api", limiter);
 
+// Body parser, reading data from body into req.body
 app.use(express.json({ limit: "10kb" }));
+app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 app.use(cookieParser());
 
 // Data sanitization against NoSQL query injection
@@ -54,6 +60,24 @@ app.use((req, res, next) => {
   console.log(req.cookies);
   next();
 });
+
+// Recommendation System Implementation
+app.get("/api/fetchMatchingNames", (req, res) => {
+  const targetName = req.query.targetName;
+
+  User.find({ name: targetName }, "name", (err, users) => {
+    if (err) {
+      console.error("Error fetching users:", err);
+      res.status(500).json({ error: "Error fetching users" });
+    } else {
+      const names = users.map((user) => user.name);
+      console.log(`Users with name '${targetName}':`, names);
+      res.json(names);
+    }
+  });
+});
+
+// Recommendation System implementation fiinished
 
 //Routes
 app.use("/", viewRouter);
