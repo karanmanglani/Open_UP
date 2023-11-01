@@ -1,0 +1,12 @@
+html
+  head
+    title Output
+    link(rel="stylesheet", type="text/css", href="output.css")
+  body
+    .suggestedoutput
+      p.suggested Suggested Friends
+      .friends
+        - for (var i = 0; i < 3; i++)
+          .border
+            p.output Abhishek
+            img(src="picture.jpg")
