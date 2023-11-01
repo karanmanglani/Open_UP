@@ -2,7 +2,7 @@
 
 import { showAlert } from "./alerts.js";
 
-const signup = async (name, email, password, passwordConfirm) => {
+const signup = async (name, email, password, passwordConfirm, gender) => {
   try {
     const res = await axios({
       method: "POST",
@@ -12,6 +12,7 @@ const signup = async (name, email, password, passwordConfirm) => {
         email,
         password,
         passwordConfirm,
+        gender,
       },
     });
 
@@ -34,7 +35,7 @@ document.querySelector(".form").addEventListener("submit", (e) => {
   const password = document.getElementById("password1").value;
   const passwordConfirm = document.getElementById("password2").value;
   if (password == passwordConfirm) {
-    signup(name, email, password, passwordConfirm);
+    signup(name, email, password, passwordConfirm, "Male");
   }
 });
 

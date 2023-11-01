@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema({
     validate: [validator.isEmail, "Please provide a valid email"],
   },
 
+  gender: {
+    type: String,
+  },
+
   photo: String,
 
   password: {
@@ -34,6 +38,68 @@ const userSchema = new mongoose.Schema({
       },
       message: "Passwords are not the same",
     },
+  },
+
+  //EDUCATIONAL BACKGROUND
+  collegeName: {
+    type: String,
+  },
+
+  majorFieldOfStudy: {
+    type: String,
+  },
+
+  currentYearOfStudy: {
+    type: Number,
+  },
+
+  //INTERESTS AND LIKES
+  hobbie: {
+    type: ["string"],
+  },
+
+  favoriteBook: {
+    type: ["string"],
+  },
+
+  favoriteMovie: {
+    type: ["string"],
+  },
+
+  favoriteMusic: {
+    type: ["string"],
+  },
+
+  favoriteSubject: {
+    type: ["string"],
+  },
+
+  //DISLIKES
+  dislikedSubject: {
+    type: ["string"],
+  },
+  dislikedHobbies: {
+    type: ["string"],
+  },
+  triggerPoint: {
+    type: ["string"],
+  },
+
+  //EXTRA CURRICULAR ACTIVITIES
+  clubs: {
+    type: ["string"],
+  },
+  favoriteSport: {
+    type: ["string"],
+  },
+  creativeHobbie: {
+    type: ["string"],
+  },
+  aspiration: {
+    type: ["string"],
+  },
+  challenges: {
+    type: ["string"],
   },
 });
 
