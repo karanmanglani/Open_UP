@@ -1093,7 +1093,7 @@ header[class="header"] {
 }
 
 button[class="loginbutton"] {
-  width: 2cm;
+  width: 3cm;
   height: 0.8cm;
   background-color: rgb(105, 121, 248);
   color: rgb(45, 45, 45);
@@ -1130,7 +1130,7 @@ li[class="headerHeading"] {
 div[class="buttons"] {
   position: absolute;
   top: 15px;
-  left: 85%;
+  left: 75%;
 }
 a[class="headerlink"] {
   text-decoration: none;
@@ -1173,4 +1173,7 @@ p[class="footer__copyright"] {
   color: white;
   margin: auto;
   margin-top: 1cm;
+}
+a {
+  text-decoration: none;
 }

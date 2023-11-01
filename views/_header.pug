@@ -14,9 +14,15 @@ header.header
         a.headerlink(href='#') Contact Us
   if user 
     .buttons
-      a.loginbutton(href='/userProfile') Update Profile
-      a.loginbutton(href='/api/v1/users/logout') Logout
+      button.loginbutton
+        a.loginbutton(href='/userProfile') Update Profile
+      button.loginbutton
+        a.loginbutton(href='/api/v1/users/logout') Logout
+      button.loginbutton
+        a.loginbutton(href='/findFriend') Suggest Friends
   else
     .buttons
-      a.loginbutton(href='/login') Login
-      a.loginbutton(href='/signup') Sign Up
+      button.loginbutton
+        a.loginbutton(href='/login') Login
+      button.loginbutton
+        a.loginbutton(href='/signup') Sign Up
