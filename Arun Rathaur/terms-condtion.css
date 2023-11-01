@@ -1,0 +1,39 @@
+.tmheading{
+    font-size: 23;
+    color:white;
+    padding-left: 10px;
+    text-decoration: underline;
+    color:rgb(0, 0, 255);
+}
+.tmheading1{
+    font-size:27;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color:white;
+   color:blue;
+   text-decoration:underline;
+}
+.tmtext{
+   margin-bottom:30px;
+   margin-top:-2px;
+   color:white;
+   padding-left: 20px;
+}
+div[class="main-terms_and_condition"]{
+    background-color: rgb(47, 47, 47);
+}
+p[class="tmtext1"]{
+    margin-bottom:30px;
+   margin-top:-2px;
+   color:white;
+
+}
+hr[class="terms-conditon"]{
+color:blue;
+}
+div[class="information"]{
+    color:blue;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
