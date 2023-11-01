@@ -1,0 +1,43 @@
+doctype html 
+html 
+  head 
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' type='text/css' href='/css/userProfile.css')
+    link(rel='shortcut icon' type='image/png' href='/public/img/logo.png')
+    title Profile Page |
+  body(style='background-color:rgb(38, 38, 38)')
+    // Header
+    include _header
+
+    // Content
+    block content 
+      .main_home_page
+        .main_heading_box
+          div.firstdivhome Welcome to Open UP
+          div.seconddivhome Unlock your
+            span.firstspanhome Full Potential
+          div.thriddivhome with Personalized Development
+          p.lower-line-homepage
+            span.secondspanhome Connect with Like-Minded Peers.
+            p.firstphome
+              span.thirdspanhome Friendship knows no demographic boundaries.
+              |It's a journey of connecting with kindred spirits in the most unexpected places.
+        p.thridphome
+          button.sign-in_homepage Sign up for Free
+          p(style="color: white; text-align: center; padding-top:20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;")
+            | The Access will automatically be given after successful sign up/login
+
+
+    // FOOTER
+    include _footer
+
+
+
+
+
+//- if user 
+//-     a(href='/api/v1/users/logout') Logout 
+//- else
+//-     a(href='/login') Login 
+//-     a(href='/signup') SignUp 
