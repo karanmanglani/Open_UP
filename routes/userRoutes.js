@@ -16,25 +16,12 @@ router.delete("/deleteMe", userController.deleteMe);
 
 router.route("/").post(userController.createUser);
 
-// Define the route for updating user data
-router.put("/:id", async (req, res) => {
-  const userId = req.params._id; // Extract the user's ID from the URL
-  const updatedUserData = req.body; // Data to update (e.g., name, password, email, etc.)
+router.route("/").get(userController.getAllUsers);
 
-  try {
-    // Find the user by ID and update their data
-    const user = await User.findByIdAndUpdate(userId, updatedUserData, {
-      new: true,
-    });
+router
+  .route("/:id")
+  .get(userController.getUser)
+  .patch(userController.updateUser)
+  .delete(userController.deleteUser);
 
-    if (!user) {
-      return res.status(404).json({ error: "User not found" });
-    }
-
-    res.json(user); // Respond with the updated user data
-  } catch (error) {
-    console.error("Error updating user:", error);
-    res.status(500).json({ error: "Error updating user" });
-  }
-});
 module.exports = router;

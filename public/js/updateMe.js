@@ -1,22 +1,31 @@
+import { showAlert } from "./alerts.js";
+
 const updatedData = {
   name: "Karan Manglani",
   email: "newemail@example.com",
   // Add other fields you want to update
 };
 
-userId = document.querySelector("p.id").textContent;
+// type is either 'password' or 'data'
+const updateUser = async (data, type) => {
+  try {
+    const url =
+      type === "password"
+        ? "/api/v1/users/updateMyPassword"
+        : "/api/v1/users/updateMe";
 
-fetch(`/api/v1/users/:${userId}`, {
-  method: "PUT",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(updatedData),
-})
-  .then((response) => response.json())
-  .then((data) => {
-    console.log("User data updated:", data);
-  })
-  .catch((error) => {
-    console.error("Error updating user:", error);
-  });
+    const res = await axios({
+      method: "PATCH",
+      url,
+      data,
+    });
+
+    if (res.data.status === "success") {
+      showAlert("success", `${type.toUpperCase()} updated successfully!`);
+    }
+  } catch (err) {
+    showAlert("error", err.response.data.message);
+  }
+};
+
+updateUser(updatedData, "data");
