@@ -16,7 +16,7 @@ exports.getBase = (req, res) => {
 
 exports.getSignupForm = (req, res) => {
   res.status(200).render("signUp", {
-    title: "Base",
+    title: "Sign Up",
   });
 };
 
@@ -35,6 +35,18 @@ exports.getLoginForm = (req, res) => {
 exports.getAccount = (req, res) => {
   res.status(200).render("account", {
     title: "Your account",
+  });
+};
+
+exports.getFriend = (req, res) => {
+  res.status(200).render("findFriend", {
+    title: "Find Friend",
+  });
+};
+
+exports.getUpdateMe = (req, res) => {
+  res.status(200).render("updateProfile", {
+    title: "Update Profile",
   });
 };
 

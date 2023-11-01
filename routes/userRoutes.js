@@ -8,10 +8,15 @@ router.post("/signup", authController.signup);
 router.post("/login", authController.login);
 router.get("/logout", authController.logout);
 
+// Protect all routes after this middleware
+router.use(authController.protect);
+
 router.patch("/updateMe", authController.protect, userController.updateMe);
 router.delete("/deleteMe", userController.deleteMe);
 
 router.route("/").post(userController.createUser);
+
+router.route("/").get(userController.getAllUsers);
 
 router
   .route("/:id")

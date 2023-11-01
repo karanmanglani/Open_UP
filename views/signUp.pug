@@ -8,47 +8,43 @@ html(lang = 'en')
         script(src='js/sign-up.js')
         link(rel= 'stylesheet', href='css/sign-up.css')
     body 
-    img(src='img/signUpPage.png',class='background')
-    
-    div(class='box')
-        h1 Sign Up
-        p(style='text-align: center;') Join OpenUp to get Started
-        form.form-user-data
-            p(class='text') Full Name
-            p 
-                input(type='text' placeholder='Your full Name' id='name')
-                img(src='img/images.jpg' class='logo')
+        img(src='img/signUpPage.png',class='background')
+        
+        div(class='box')
+            h1 Sign Up
+            p(style='text-align: center;') Join OpenUp to get Started
+            form.form-user-data.form
+                p(class='text') Full Name
+                p 
+                    input(type='text' placeholder='Your full Name' id='name')
+                    img(src='img/images.jpg' class='logo')
 
-            p(class='text') Email
-            p 
-                input(type='email' placeholder='Enter your email address' id='email')
-                img(src='img/download.jpg' class='logo')
+                p(class='text') Email
+                p 
+                    input(type='email' placeholder='Enter your email address' id='email')
+                    img(src='img/download.jpg' class='logo')
+                
+                p(class='text') Create a Password
+                p 
+                    input(type='password' placeholder='Create a Password' id='password1')
+                    img(src='img/download1.png' class='logo')
 
-            p(class='text') Username
-            p 
-                input(type='text' placeholder='Create a Username' id='username')
-                img(src='img/images.jpg' class='logo')
+                p(class='text') Confirm Password
+                p 
+                    input(type='text' placeholder='Confirm Password' id='password2')
+                    img(src='img/download1.png' class='logo')
+                
+                div(id='wrongoutput' value='')
+
+                p
+                    input(type='checkbox')
+                    z I agree to the Terms and Privacy Policy.
             
-            p(class='text') Create a Password
-            p 
-                input(type='password' placeholder='Create a Password' id='password1')
-                img(src='img/download1.png' class='logo')
-
-            p(class='text') Confirm Password
-            p 
-                input(type='text' placeholder='Confirm Password' id='password2')
-                img(src='img/download1.png' class='logo')
+                p
+                    button(id='submit') Get Started
             
-            div(id='wrongoutput' value='')
+            p(class='footer') Already have an Account?
+                span Log in
 
-            p
-                input(type='checkbox')
-                z I agree to the Terms and Privacy Policy.
-        
-            p
-                button(id='submit') Get Started
-        
-        p(class='footer') Already have an Account?
-            span Log in
-
-        
+    script(src='/js/axios.js', type ='module')
+    script(src='/js/sign-up.js', type='module')
