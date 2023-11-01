@@ -1,3 +1,5 @@
+const userModel = require('./../models/userModel')
+
 const students = [
   { 
     name: 'Shaurya',
@@ -99,7 +101,7 @@ for (const friend of potentialFriends) {
 
 
 // Fetch students from the database
-StudentModel.find({}, (err, students) => {
+userModel.find({}, (err, students) => {
   if (err) {
     console.error(err);
   } else {

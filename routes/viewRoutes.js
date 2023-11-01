@@ -3,6 +3,7 @@ const viewsController = require("../controllers/viewsController");
 const authController = require("../controllers/authController");
 const userController = require("../controllers/userController");
 const userProfileController = require("../controllers/userProfileController");
+const homeController = require("../controllers/homeController");
 
 const router = express.Router();
 
@@ -20,6 +21,7 @@ router.get(
   authController.protect,
   viewsController.getAccount
 );
+router.get("/home", homeController.getHome);
 
 router.get("/findFriend", authController.isLoggedIn, viewsController.getFriend);
 router.get("/updateMe", authController.isLoggedIn, viewsController.getUpdateMe);
