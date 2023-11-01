@@ -91,3 +91,25 @@ console.log(`Potential Friends for ${studentToMatch.name}:`);
 for (const friend of potentialFriends) {
   console.log(`${friend.name} (Similarity Score: ${friend.similarityScore})`);
 }
+
+
+
+
+//Code
+
+
+// Fetch students from the database
+StudentModel.find({}, (err, students) => {
+  if (err) {
+    console.error(err);
+  } else {
+    // The 'students' array now contains data from the MongoDB collection
+    // You can use this data for your matching algorithm
+    const studentToMatch = students[0];
+    const potentialFriends = findPotentialFriends(studentToMatch, matchingThreshold);
+
+    console.log(`Potential Friends for ${studentToMatch.name}:`);
+    for (const friend of potentialFriends) {
+      console.log(`${friend.name} (Similarity Score: ${friend.similarityScore})`);
+    }
+  }
