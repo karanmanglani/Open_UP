@@ -1,9 +1,26 @@
-if user
+extends base
+        
 
+block content
     p Hi 
         span.name= user.name 
+    .suggestedoutput
+        p.suggested Suggested Friends
+        .friends
+        .border
+          div 
+            p.output.name1 Abhishek
+            img(src="img/picture.jpg")
+          div  
+            p.output.name2 Student 2
+            img(src="img/picture.jpg")
+          div
+            p.output.name3 Student 3
+            img(src="img/picture.jpg")
+
+
+
     
-    p.suggestedFriends Suggested friends for you are
 
     script(src='/js/axios.js', type="module")
     script(src="/js/findFriend.js",type="module")

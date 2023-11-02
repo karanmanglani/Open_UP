@@ -12,21 +12,22 @@ html
 
     // Content
     block content 
-      .main_home_page
-        .main_heading_box
-          div.firstdivhome Welcome to Open UP
-          div.seconddivhome Unlock your
-            span.firstspanhome Full Potential
-          div.thriddivhome with Personalized Development
-          p.lower-line-homepage
-            span.secondspanhome Connect with Like-Minded Peers.
-            p.firstphome
-              span.thirdspanhome Friendship knows no demographic boundaries.
-              |It's a journey of connecting with kindred spirits in the most unexpected places.
-        p.thridphome
-          button.sign-in_homepage Sign up for Free
-          p(style="color: white; text-align: center; padding-top:20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;")
-            | The Access will automatically be given after successful sign up/login
+      html
+        head
+          title Home Page
+          link(rel="stylesheet", type="text/css", href="homepage.css")
+        body
+          .main_home_page
+            img(src="img/5184015.jpeg", alt="", style="width:100%;height:100%;")
+            .main_heading_box
+              div(style="font-size:45;") Unlock your 
+                span(style="color:rgb(0, 0, 255)") Full Potential
+              div(style="font-size:50;") with Personalized Development
+              p.lower-line-homepage
+                span(style="font-size:large;") Connect with Like-Minded Peers.
+                p(style="opacity: 80%;")
+                  span(style="color:blue;text-decoration: underline;") Friendship knows no demographic boundaries.
+                  | It's a journey of connecting with kindred spirits in the most unexpected places.
 
 
     // FOOTER

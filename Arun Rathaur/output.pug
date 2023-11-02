@@ -1,12 +1,16 @@
-html
-  head
-    title Output
-    link(rel="stylesheet", type="text/css", href="output.css")
-  body
-    .suggestedoutput
-      p.suggested Suggested Friends
-      .friends
-        - for (var i = 0; i < 3; i++)
-          .border
-            p.output Abhishek
-            img(src="picture.jpg")
+
+extends base
+
+block content
+  .suggestedoutput
+    p.suggested Suggested Friends
+    .friends
+      .border
+        p.output.name1 Abhishek
+        img(src="picture.jpg")
+        
+        p.output.name2 Abhishek
+        img(src="picture.jpg")
+
+        p.output.name3 Abhishek
+        img(src="picture.jpg")

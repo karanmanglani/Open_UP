@@ -75,10 +75,37 @@ axios
 
     const potentialFriends = findPotentialFriends(User, matchingThreshold);
     console.log(`Potential Friends for ${User.name}:`);
-    for (const friend of potentialFriends) {
+
+    if (potentialFriends.length == 1) {
       document.querySelector(
-        ".suggestedFriends"
-      ).textContent = ` Suggested friends for you are ${friend.name} (Similarity Score: ${friend.similarityScore})`;
+        "p.name1"
+      ).textContent = `${potentialFriends[0].name}`;
+    } else if (potentialFriends.length == 2) {
+      document.querySelector(
+        "p.name1"
+      ).textContent = `${potentialFriends[0].name}`;
+
+      document.querySelector(
+        "p.name2"
+      ).textContent = `${potentialFriends[1].name}`;
+    } else if (potentialFriends.length > 2) {
+      document.querySelector(
+        "p.name1"
+      ).textContent = `${potentialFriends[0].name}`;
+
+      document.querySelector(
+        "p.name2"
+      ).textContent = `${potentialFriends[1].name}`;
+
+      document.querySelector(
+        "p.name3"
+      ).textContent = `${potentialFriends[2].name}`;
+    }
+    for (const friend of potentialFriends) {
+      //   document.querySelector(
+      //     ".suggestedFriends"
+      //   ).textContent = ` Suggested friends for you are ${friend.name} (Similarity Score: ${friend.similarityScore})`;
+
       console.log(
         `${friend.name} (Similarity Score: ${friend.similarityScore})`
       );
